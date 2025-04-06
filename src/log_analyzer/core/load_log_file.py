@@ -1,6 +1,6 @@
 from typing import Iterator
 
-from src.log_analyzer.core.exceptions import FileLoadError
+from log_analyzer.core.exceptions import FileLoadError
 
 
 def load_log_file(path: str) -> Iterator[str]:

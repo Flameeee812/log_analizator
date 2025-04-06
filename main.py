@@ -1,6 +1,6 @@
 import logging
 
-from src.log_analyzer.cli import initialize_parser
+from log_analyzer.cli import initialize_parser
 
 
 if __name__ == "__main__":

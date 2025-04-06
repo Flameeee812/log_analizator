@@ -2,9 +2,9 @@ import logging
 from collections import defaultdict
 from typing import Dict
 
-from src.log_analyzer.core.load_log_file import load_log_file
-from src.log_analyzer.utils import fetch_endpoint, fetch_log_level
-from src.log_analyzer.core.exceptions import FileLoadError
+from log_analyzer.core import load_log_file
+from log_analyzer.utils import fetch_endpoint, fetch_log_level
+from log_analyzer.core.exceptions import FileLoadError
 
 
 def analyze_logs(*args: str) -> Dict[str, Dict[str, int]]:

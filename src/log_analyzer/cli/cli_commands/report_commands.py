@@ -1,5 +1,5 @@
 import logging
-from src.log_analyzer.services import (
+from log_analyzer.services import (
     format_report, count_total_log_levels, count_total_requests, analyze_logs
 )
 
