@@ -21,5 +21,6 @@ def load_log_file(path: str) -> Iterator[str]:
         with open(file=path, mode="r", encoding="utf-8") as file:
             for log in file:
                 yield log.strip()
-    except FileNotFoundError:
+    except (FileNotFoundError, IsADirectoryError):
         raise FileLoadError(path)
+
